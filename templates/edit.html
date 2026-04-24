@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Edit</title>    
+{% endblock %}
+
+{% block body %}
+    <div class = "edit" id ="Edit">
+        <div class = "Recuadros">
+            <form action="/edit/{{gasto.id}}" method = "POST">
+            <input type="text" name ="descripcion" id="descripcion" placeholder = "Escriba la descripcion a editar" required>
+            <input type="text" name ="categoria" id = "categoria" placeholder="Escriba la categoria a editar" required>
+            <input type="text" name ="monto" id = "monto" placeholder="Escriba el monto a editar" required>
+            <input type="submit" value ="Edit" id= "btn_add">
+        </form>
+        </div>
+    </div>
+
+
+{% endblock %}

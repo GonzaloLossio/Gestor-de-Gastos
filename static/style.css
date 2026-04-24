@@ -1,0 +1,427 @@
+h1 {
+  font-size: 55px;
+  margin-top: 140px;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.parrafo1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+body {
+  font-family: "Nunito";
+  background-color: #f8f9fa;
+}
+
+.Recuadros {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.Recuadros input {
+  width: 220px;
+  text-align: center;
+}
+
+.botonEditar {
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px auto;
+  font-size: 15px;
+  background: #e63946;
+  border-radius: 30px;
+  color: white;
+}
+
+.botonEliminar {
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px auto;
+  font-size: 15px;
+  background: #e63946;
+  border-radius: 30px;
+  color: white;
+}
+
+#btn_add {
+  width: 70px;
+}
+
+Table {
+  margin: auto;
+  width: 45%;
+  border-collapse: collapse;
+  justify-content: center;
+  margin-top: 175px;
+}
+
+th {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: #e63946;
+  padding: 10px 20px;
+  border: 1px solid #2b2d42;
+  border-radius: 2px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+td {
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #2b2d42;
+  border-radius: 2px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#Home body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  left: 0;
+  background-color: #e63946;
+}
+
+.home-btn {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 50px;
+  line-height: 45px;
+  color: white;
+  background: #e63946;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 8px rgb(230, 57, 70);
+  transition: 0.2s;
+}
+
+.logout-btn {
+  text-decoration: none;
+  margin-left: 1750px;
+  margin-top: 50px;
+  line-height: 45px;
+  color: white;
+  background: #e63946;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 8px rgb(230, 57, 70);
+  transition: 0.2s;
+}
+
+.bloque {
+  position: fixed;
+  margin: auto;
+  width: 25%;
+  height: 60%;
+  background-color: #ffffff;
+  margin-top: 155px;
+  margin-left: 956px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.navBarHome {
+  position: fixed;
+  width: 25%;
+  height: 60%;
+  text-align: center;
+  background-color: #e63946;
+  margin-top: 155px;
+  margin-left: 475px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.titulo {
+  margin-top: 170px;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: rgba(255, 255, 255, 0.5);
+  font-family: "Nunito";
+  color: white;
+}
+
+.titulo2 {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: rgba(0, 0, 0, 0.5);
+  font-family: "Nunito";
+  color: black;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social_icons a {
+  border: 1px solid #ccc;
+  display: flex;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #555;
+}
+
+.social_icons a:hover {
+  background-color: #e63946;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.5);
+}
+
+.parrafoCasoContrario {
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.parrafo2 {
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  font-family: "Nunito";
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.recuadrosCuenta {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  color: #555555;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.form-control:focus {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.contraOlvidada {
+  text-align: center;
+}
+
+.contraOlvidada * {
+  color: black;
+}
+
+.botonIniciarSesion {
+  justify-content: center;
+  justify-self: center;
+}
+
+.btn {
+  width: 200px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e63946;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #d62839;
+}
+
+#Registro {
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  color: white;
+  border: 1px solid white;
+  text-shadow: rgba(255, 255, 255, 0.5);
+  background: #e63946;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+#Registro * {
+  color: white;
+}
+
+#Registro:hover {
+  background-color: #d62839;
+}
+
+a {
+  text-decoration: none;
+}
+
+.TituloRegistro {
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.CuadroBlanco {
+  position: fixed;
+  margin: auto;
+  width: 50%;
+  height: 60%;
+  background-color: #ffffff;
+  margin-left: 475px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+  gap: 20px;
+}
+
+.RegistroFormulario {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+.form-register2 {
+  color: #555555;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 800px;
+  margin: 10px auto;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+.form-register2:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.form-register2:focus {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.BotonRegistraseEnPaginaRegistro {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.flash-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.flash {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.close-btn {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.flash.success {
+  background-color: #2ecc71;
+}
+
+.flash.danger {
+  background-color: #e63946;
+}
+
+.flash.warning {
+  background-color: #f1c40f;
+  color: black;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

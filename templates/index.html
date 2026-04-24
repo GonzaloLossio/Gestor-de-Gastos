@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Tus Gastos</title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class = "index" id="Index">
+        <div class = "navBar">
+            <a href="/" class ="home-btn">Home</a>
+            {% if current_user.is_authenticated %}
+            <a href = "/logout" class = "logout-btn">Salir</a>
+            {% endif %}
+        </div>
+        <h1>Tus Gastos:</h1>
+        {% if gastos | length <1 %}
+        <div class= "parrafo1">
+            <p> Aun no hay informacion, agrega tus gastos!</p>
+        </div>
+        {% else %}
+        
+        <table id = "tabla-gastos">
+            <tr>
+                <th>Descripcion</th>
+                <th>Categoria</th>
+                <th>Monto</th>
+                <th>Fecha De Gasto</th>
+                <th>Accion</th>
+            </tr>
+            {% for gasto in gastos %}
+            <tr id="fila-{{gasto.id}}">
+                <td>{{gasto.descripcion}}</td>
+                <td>{{gasto.categoria}}</td>
+                <td>{{gasto.monto}}</td>
+                <td>{{gasto.fechaDelGasto.strftime("%d-%m-%Y")}}</td>
+                <td>
+                    <a class = "botonEditar" href="/edit/{{gasto.id}}">Edit</a>
+
+                    <button class ="botonEliminar" onclick="eliminarGasto('{{ gasto.id }}')">Delete</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+            <div class = "Recuadros">
+                <input type="text" name ="descripcion" id="descripcion" placeholder = "Ingresa la descripcion de tu gasto" required>
+                <input type="text" name ="categoria" id = "categoria" placeholder = "Ingresa la categoria de tu gasto" required>
+                <input type="text" name ="monto" id = "monto" placeholder = "Ingresa el monto gastado" required>
+                <button type = "button" id="botonAgregar" onclick="agregarGasto()">Agregar Gasto</button>
+            </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <script>
+                    alert("{{ message }}");
+                    </script>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <script src="{{ url_for('static', filename='js/gestor.js') }}"></script>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+{%  block head %}
+<title>Registro De usuario</title>
+{%  endblock %}
+
+
+{%  block body %}
+
+<div class = "TituloRegistro">
+    <h2>Porfavor Cree su Cuenta</h2>
+</div>
+<div class = "navBar">
+    <a href="/" class ="home-btn">Home</a>
+</div>
+
+<div class = "CuadroBlanco">
+    <div class = "RegistroFormulario">
+    <form class = 'form-register' style = "color:white" method= 'POST'>
+        {{ form.hidden_tag() }}
+        
+        <div class ="form-group">
+            {{ form.username.label() }}
+            {{ form.username(class = "form-register2",placeholder = "Nombre De Usuario") }}
+        </div>
+        
+        <div class = "form-group">
+            {{ form.email_adress.label() }}
+            {{ form.email_adress(class = "form-register2",placeholder = "Correo Electronico") }}    
+        </div>
+        
+        <div class="form-group">
+            {{ form.password1.label() }}
+            {{ form.password1(class = "form-register2",placeholder = "Contraseña") }}
+        </div>
+        
+        <div class ="form-group">  
+            {{ form.password2.label() }}
+            {{ form.password2(class = "form-register2",placeholder = "Confirme la Contraseña") }}
+        </div>
+    
+        <div class ="BotonRegistraseEnPaginaRegistro" id="BotonRegistraseEnPaginaRegistro">
+        {{ form.submit(class = "btn btn-lg btn-block btn-primary") }}
+        </div>
+    </form>
+</div>
+</div>
+
+{%  endblock %}
