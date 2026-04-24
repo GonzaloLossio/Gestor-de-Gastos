@@ -28,3 +28,5 @@ Aplicación web Full-Stack diseñada para la administración y control de finanz
 <img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/7bed7174-7289-46ca-93f7-1eea85bb5eec" />
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4685e137-9282-4970-91d4-76fb6f8067ed" />
+
+<img width="1919" height="1035" alt="image" src="https://github.com/user-attachments/assets/2729526a-5788-40a1-bf42-363a7215ec51" />
