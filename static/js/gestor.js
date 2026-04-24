@@ -59,6 +59,10 @@ function agregarGasto() {
         if(data.status === "success") {
             const tabla = document.getElementById("cuerpo-tabla") || document.getElementById("tabla-gastos");
             
+            if(!tabla){
+                window.location.reload();
+                return;
+            }
             const nuevaFila = document.createElement("tr"); 
             nuevaFila.id = `fila-${data.gasto.id}`;
 
@@ -73,7 +77,8 @@ function agregarGasto() {
                 </td>
             `;
 
-            tabla.appendChild(nuevaFila);
+            const cuerpoTabla = tabla.querySelector("tbody") || tabla;
+            cuerpoTabla.appendChild(nuevaFila);
 
             document.getElementById('descripcion').value = "";
             document.getElementById('categoria').value = "";
